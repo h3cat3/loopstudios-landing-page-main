@@ -1,0 +1,104 @@
+:root {
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--Grey200: hsl(0, 0%, 85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+@font-face {
+    font-family: Alata;
+    src: url(../../assets/fonts/Alata/Alata-Regular.ttf);
+}
+@font-face {
+    font-family: Josefin_Sans;
+    src: url(../../assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+body{
+ width: 100vw;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ overflow-x: hidden;
+ font-family: Alata;
+ font-size: 0.9375rem;
+ font-weight: 400;
+ 
+}
+.container{
+    padding-top:clamp(2.6rem, 6vw, 9rem);
+    padding-inline: clamp(1.5rem, 9vw, 30%);
+    width: 100%;
+
+    &--header{
+        height: 40.625rem;
+        flex-shrink: 0;
+        background-image: url(../../assets/images/mobile/image-hero.jpg);
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width: 768px) {
+            background-image: url(../../assets/images/desktop/image-hero.jpg) ;
+        }
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        &--menu{
+            display: none;
+            @media (min-width: 1024px) {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+
+    &__title{
+        color: var(--White);
+        text-transform: uppercase;
+        margin-block: auto;
+        font-family: Josefin_Sans, sans-serif;
+        font-weight: 300;
+        font-size: clamp(2.5rem, 9vw, 4.275rem);
+        border: 3px solid var(--White);
+        padding: 1.125rem;
+        max-width: 40.625rem;
+        &--black{
+            color: var(--Black);
+            border: none;
+            font-size: clamp(2rem, 9vw, 3rem);
+            padding-inline: 0;
+        }
+    }
+
+    &__leader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        
+    }
+    &__leader-text{
+        @extend .container__leader;
+        gap: 1.5rem;
+            text-align: center;
+        }
+}
+@media (min-width: 1023px){
+    .menu__oppen{
+        display: none;
+    }
+}
