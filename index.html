@@ -23,12 +23,12 @@
         <li><a href="">Support</a></li>
       </ul>
     </nav>
-    <h1 class="container__title">
+    <h1 class="container__title container__title--bordered">
       Immersive<br> experiences <br>that deliver
     </h1>
   </header>
 
-  <main class="container" >
+  <main class="container container--main" >
     <section class="container__leader">
       <picture >
         <source media="(min-width: 768px)" srcset="./assets/images/desktop/image-interactive.jpg">
@@ -42,59 +42,93 @@
     to their brand.</p>
       </div>
     </section>
-    <section class="container">
-      <h2>Our creations</h2>
-      <a href="#">
-        <h3>Deep earth</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-deep-earth.jpg">
-        <img src="./assets/images/mobile/image-deep-earth.jpg" alt="">
-      </picture>
-      </a><a href="">
-        <h3>Night arcade</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-night-arcade.jpg">
-        <img src="./assets/images/mobile/image-night-arcade.jpg" alt="">
-      </picture>
-      </a>
-      <a href="">
-        <h3>Soccer team VR</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-soccer-team.jpg">
-        <img src="./assets/images/mobile/image-soccer-team.jpg" alt="">
-      </picture>
-      </a>
-      <a href=""><h3>The grid</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-grid.jpg">
-        <img src="./assets/images/mobile/image-grid.jpg" alt="">
-      </picture></a>
-      <a href=""><h3>From up above VR</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-from-above.jpg">
-        <img src="./assets/images/mobile/image-from-above.jpg" alt="">
-      </picture></a>
-      <a href=""><h3>Pocket borealis</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-pocket-borealis.jpg">
-        <img src="./assets/images/mobile/image-pocket-borealis.jpg" alt="">
-      </picture></a>
-      <a href=""><h3>The curiosity</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-curiosity.jpg">
-        <img src="./assets/images/mobile/image-curiosity.jpg" alt="">
-      </picture></a>
-      <a href=""><h3>Make it fisheye</h3>
-        <picture >
-        <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-fisheye.jpg">
-        <img src="./assets/images/mobile/image-fisheye.jpg" alt="">
-      </picture></a>
-      <button class="btn">
+    <section class="container__creation">
+      <div class="container__creation-head">
+        <h2  class="container__title container__title--black">Our creations</h2>
+        <button class="btn btn--largescreen">
+          See all
+        </button>
+      </div>
+      <ul class="container__list">
+        <li class="container__item">
+          <a href="#">
+            <h3 class="container__title container__title--item" >Deep <br>earth</h3>
+            <picture >
+            <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-deep-earth.jpg">
+            <img class="container__item-img" src="./assets/images/mobile/image-deep-earth.jpg" alt="">
+          </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >Night <br>arcade</h3>
+            <picture >
+              <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-night-arcade.jpg">
+              <img class="container__item-img" src="./assets/images/mobile/image-night-arcade.jpg" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >Soccer <br>team VR</h3>
+            <picture >
+            <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-soccer-team.jpg">
+            <img class="container__item-img" src="./assets/images/mobile/image-soccer-team.jpg" alt="">
+          </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >The <br>grid</h3>
+            <picture >
+              <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-grid.jpg">
+              <img class="container__item-img" src="./assets/images/mobile/image-grid.jpg" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >From up <br>above VR</h3>
+            <picture >
+              <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-from-above.jpg">
+              <img class="container__item-img" src="./assets/images/mobile/image-from-above.jpg" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >Pocket <br>borealis</h3>
+            <picture >
+              <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-pocket-borealis.jpg">
+              <img class="container__item-img" src="./assets/images/mobile/image-pocket-borealis.jpg" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >The <br>curiosity</h3>
+            <picture >
+              <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-curiosity.jpg">
+              <img class="container__item-img" src="./assets/images/mobile/image-curiosity.jpg" alt="">
+            </picture>
+          </a>
+        </li>
+        <li class="container__item">
+          <a href="">
+            <h3 class="container__title container__title--item" >Make it <br>fisheye</h3>
+            <picture >
+              <source media="(min-width: 1024px)" srcset="./assets/images/desktop/image-fisheye.jpg">
+              <img class="container__item-img" src="./assets/images/mobile/image-fisheye.jpg" alt="">
+            </picture>
+          </a>
+        </li>
+      </ul>
+      <button class="btn btn--smallscreen">
         See all
       </button>
     </section>  
   </main>
-  <footer class="contaner">
+  <footer class="container container--footer">
     <img src="./assets/images/logo.svg" alt="logo loopstudios">
     <ul class="menu">
         <li><a href="#">About</a></li>
