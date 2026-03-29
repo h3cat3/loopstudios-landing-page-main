@@ -14,7 +14,10 @@
   <header class="container container--header">
     <nav class="container__nav">
       <img src="./assets/images/logo.svg" alt="logo loopstudios">
-      <img class="menu__oppen" src="./assets/images/icon-hamburger.svg" alt="menu">
+      <btn type="button" id="menu-open"  class="menu__oppen>">
+        <img class="menu__open" src="./assets/images/icon-hamburger.svg" alt="open menu">
+      </btn>
+         
       <ul class="container__nav--menu">
         <li><a href="#">About</a></li>
         <li><a href="#">Careers</a></li>
@@ -129,14 +132,17 @@
     </section>  
   </main>
   <footer class="container container--footer">
-    <img src="./assets/images/logo.svg" alt="logo loopstudios">
-    <ul class="menu">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Events</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="">Support</a></li>
-      </ul>
+    <div>
+      <img src="./assets/images/logo.svg" alt="logo loopstudios">
+      <ul class="menu menu--footer">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+    </div>
+    <div>
       <ul class="media">
         <li><a href="#">
           <img src="./assets/images/icon-facebook.svg" alt="facebook">
@@ -151,8 +157,27 @@
           <img src="./assets/images/icon-instagram.svg" alt="instagram">
         </a></li>
       </ul>
-      <p>© 2021 Loopstudios. All rights reserved.</p>
+      <p class="footer--rights">© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+
+    
       
   </footer>
+  <div class="menu-modal hidden" id="menu-modal">
+      <div class="menu-modal__header">
+        <img src="./assets/images/logo.svg" alt="logo loopstudios">
+        <button type="button" id="menu-close" class="menu__close" >
+          <img  src="./assets/images/icon-close.svg" alt="close menu">
+        </button>
+      </div>
+      <ul class="menu-modal__list">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="">Support</a></li>
+      </ul>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

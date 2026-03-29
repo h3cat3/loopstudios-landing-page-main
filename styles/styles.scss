@@ -14,7 +14,6 @@
 }
 img {
     max-width: 100%;
-    
 }
 @font-face {
     font-family: Alata;
@@ -55,12 +54,33 @@ body{
             background-image: url(../../assets/images/desktop/image-hero.jpg) ;
         }
     }
+    &--main{
+        padding-block: 2.5rem;
+    }
     &--footer{
+        width: 100%;
         background-color: var(--Black);
         color: var(--White);
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-block: 1.5rem;
+        text-align: center;
+        @media (min-width: 48rem) {
+                text-align: start;
+            }
+        & img {
+            width: 144px;
+            margin-inline: auto;
+            
+        }
+        @media (min-width: 48rem) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__nav{
@@ -68,9 +88,11 @@ body{
         justify-content: space-between;
         &--menu{
             display: none;
+            color: var(--White);
             @media (min-width: 1024px) {
                 display: flex;
                 gap: 2rem;
+                
             }
         }
     }
@@ -154,13 +176,41 @@ body{
     }
         
 }
+.media{
+    display: flex;
+    gap: 1rem;
+    width: 144px;
+    margin-inline: auto;
+    @media (min-width: 48rem) {
+         margin-inline-end: 0;
+    }
+}
+.menu--footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    padding-block: 1.5rem;
+    @media (min-width: 48rem) {
+        flex-direction: row;
+        padding-block: 0;
+       
+    }
+}
+.footer--rights{
+    opacity: 0.5;
+}
 .btn{
     width: 9.8125rem;
     height: 2.5rem;
     border: 2px solid var(--Black);
+    cursor: pointer;
     @media (max-width: 1023px) {
-        margin-inline: auto;
-        
+        margin-inline: auto; 
+    }
+    &:hover{
+        background-color: var(--Black);
+        color: var(--White);
     }
 }
 @media (min-width: 1024px){
@@ -180,4 +230,39 @@ body{
         display: none;
     }
 
+}
+.menu-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Black);
+     z-index: 10;
+    padding: 10%;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        color: var(--White);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 10rem;
+    }
+}
+.menu__open{
+    cursor: pointer;
+}
+.menu__close{
+    background-color: transparent;
+     border: none;
+     cursor: pointer;
+}
+.hidden{
+    display: none;
 }
